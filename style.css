@@ -283,3 +283,9 @@ form button:hover {
   min-height: 110px;
   resize: vertical;
 }
+
+
+
+formaAgenda .linha {
+  display: block;
+}
