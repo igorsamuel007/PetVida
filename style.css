@@ -289,3 +289,29 @@ form button:hover {
 formaAgenda .linha {
   display: block;
 }
+
+
+
+
+
+#formaAgenda button[type="submit"] {
+  margin-top: 24px;
+  padding: 14px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #2e8b74;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+#formaAgenda button[type="submit"]:hover {
+  background: #247059;
+}
+
+#formaAgenda button[type="submit"]:active {
+  transform: scale(0.98);
+}
