@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>🐾PetVida</h1>
+            <nav>
+                <a href="#cenario">cenário atual</a>
+                 <a href="#dor">dor do cliente</a>
+                  <a href="#info">informações</a>
+                   <a href="#github">GitHub</a>
+            </nav>
+          </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <h2>clínica veterinária e centro de estética pet</h2>
+                <p>cuidado médico e estética para o seu pet,com confiança e praticidade</p>
+            </div>
+        </section>
+
+        <main class="container">
+
+            <section id="cenario" class="card">
+                <h2>1. Cenario atual</h2>
+                <p>
+                    A PetVida é uma clínica veterinária e centro de estética pet de bairro fundada pelo Dr. Gabriel Santos e pela
+                    médica veterinária Dra. Camila Paes. O espaço oferece consultas médicas, vacinação, cirurgias de pequeno
+                    porte, além de serviços de banho e tosa.
+                </p>
+                <p>
+                    Todo o controle de agendamento de consultas e banhos é realizado
+                    em uma agenda de papel na recepção, gerida por duas recepcionistas.
+                </p> 
+            </section>
+
+            <section id="dor" class="card destaque">
+                <h2>2. dor do cliente</h2>
+                <p>
+                    O agendamento por telefone e caderno funcionou bem enquanto a clínica atendia poucos pets por dia.
+                    Atualmente, com mais de 30 banhos diários e consultas sobrepostas, o caos se instalou.
+                </p>
+                <ul>
+                    <li>choques de horarios na agenda</li>
+                    <li>Tutores esquecendo a data do banho ou da vacina do pet</li>
+                    <li>recepção perdendo tempo procurando historicos em pasta fisica</li>
+                    <li>falta de lembrete automáticos de retornos peventivos</li>
+                </ul>
+                <p>Se a PetVida mantiver o gerenciamento manual, a
+                    insatisfação dos tutores com os atrasos aumentará e a clínica perderá receita por horários ociosos </p>
+                </section>
+
+                <section id="info" class="card">
+                    <h2>3. Informações adicionais</h2>
+                    <p>O Dr. Gabriel e a Dra. Camila são sócios em partes iguais. A equipe conta com mais 2 veterinários
+                        plantonistas, 3 tosadores e 2 recepcionistas</p>
+
+                        <div class="equipe">
+                          <div class="item"><strong>2</strong><span>Sócips</span></div>
+                          <div class="item"><strong>2</strong><span>veterinários plantonistas</span></div>
+                          <div class="item"><strong>3</strong><span>tosadores</span></div>
+                          <div class="item"><strong>2</strong><span>recepcionistas</span></div>  
+                        </div>
+
+                        <p>Há pet shops grandes de rede na região que oferecem agendamentos simplificados, mas a PetVida possui o
+                            diferencial da relação de confiança médica com os tutores. A grande oportunidade é integrar o cuidado
+                            estético ao histórico de saúde do animal, oferecendo praticidade para o tutor e previsibilidade de caixa para
+                            a clínica.</p>
+                        </section>
+
+                        <section id="github" class="card">
+                            <h2>4.  Instruções e Estrutura Profissional no GitHub</h2>
+                            <p>como desenvolvedor/designer, tenho autonomia para analisar a dor do cliente e criar a solução digital ideal. Este projeto é um site institucional como a seguinte estrutura no repositorio:</p>
+
+                            <p>O <strong>REAME.md</strong> deve conter: descrição dro projeto, o problema analisado, a solução proposta, as tecnologias usadas (HTML e CSS) e como abrir o projeto</p>
+                       </section>
+
+                       <section id="formaAgenda">
+                        <h2>5. Agende seu horario</h2>
+                        <p>preencha o seu cadastro abaixo ára marcar uma consulta, vacina, banho ou tosa</p>
+
+                        <label for="tutor">nome do tutor</label>
+                        <input type="text" id="tutor" required placeholder="seu nome completo">
+
+                        <label for="telefone">telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" required placeholder="(00) 00000-0000">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com">
+
+                        <label for="Pet">Nome do Pet</label>
+                        <input type="texto" id="pet" required placeholder="Nome do seu Pet">
+
+                        <label for="especie">Espécie</label>
+                        <select id="especie" required>
+                            <option value="">selecione</option>
+                            <option value=>consulta</option>
+                            <option value=>vacinas</option>
+                            <option value=>Cirurgia de pequeno porte</option>
+                            <option value=>Banho</option>
+                            <option value=>Tosa</option>
+                            <option value=>Banho e Tosa</option>
+                        </select>
+
+                        <div class="linha">
+                            <div>
+                        <label for="hora">Horário</label>
+                        <select id="hora" required>
+                            </div>
+                            <div>
+                            <option value="">Selecione</option>
+                            <option value=>08:00</option>
+                            <option value=>09:00</option>
+                            <option value=>10:00</option>
+                            <option value=>11:00</option>
+                            <option value=>12:00</option>
+                            <option value=>13:00</option>
+                            <option value=>14:00</option>
+                            <option value=>15:00</option>
+                            <option value=>16:00</option>
+                            <option value=>17:00</option>
+                            <option value=>18:00</option>
+                        </select>
+                        </div>
+                        </div>
+
+                        <label for="obs">Observações</label>
+                        <textarea id="obs" rows="3" placeholder="Ex.: Pet com medo de barulho, alergia..."></textarea>
+
+                        <button type="submit">confirmar agendamento</button>
+                        <p id="menssagem" class="menssagem"></p>
+                        </form>
+                    
+
+                     
+
+        </main>
+
+        <footer class="rodape">
+            <p>&copy; 2026 PetVida - Clinica veterinaria e Estética Pet</p>
+        </footer>
+
+    
+</body>
+</html>
