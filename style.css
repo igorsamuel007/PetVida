@@ -223,5 +223,12 @@ form button:hover {
 }
 
 
- 
+ #formaAgenda form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
 
