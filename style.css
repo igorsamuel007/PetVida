@@ -184,3 +184,19 @@ form button:hover {
   text-align: center;
   padding: 15px 0;
 }
+
+.hero {
+  background:
+    linear-gradient(rgba(31, 122, 109, 0.6), rgba(31, 122, 109, 0.6)),
+    url("img/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
