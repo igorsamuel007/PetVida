@@ -315,3 +315,19 @@ formaAgenda .linha {
 #formaAgenda button[type="submit"]:active {
   transform: scale(0.98);
 }
+
+
+
+
+#formaAgenda .menssagem {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #2e8b74;
+}
+
+@media (max-width: 480px) {
+  #formaAgenda form {
+    padding: 20px;
+  }
+}
