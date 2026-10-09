@@ -1,3 +1,186 @@
-.{
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8f7;
+  color: #2b3a3a;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.topo {
+  background: #1f7a6d;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topo nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.topo nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #e3f3ef;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h2 {
+  color: #1f7a6d;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #1f7a6d;
+}
+
+.card h2 {
+  color: #1f7a6d;
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.card ul {
+  margin: 0 0 12px 20px;
+}
+
+.card.destaque {
+  border-left-color: #e07a5f;
+}
+
+.card.destaque h2 {
+  color: #e07a5f;
+}
+
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.equipe .item {
+  background: #e3f3ef;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.equipe .item strong {
+  display: block;
+  font-size: 28px;
+  color: #1f7a6d;
+}
+
+pre {
+  background: #2b3a3a;
+  color: #e3f3ef;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 5px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b8cfca;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 2px solid #1f7a6d;
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+form button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  background: #1f7a6d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #17594f;
+}
+
+.mensagem {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.mensagem.sucesso {
+  color: #1f7a6d;
+}
+
+.mensagem.erro {
+  color: #c0392b;
+}
+
+.rodape {
+  background: #1f7a6d;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
 }
