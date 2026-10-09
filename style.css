@@ -201,123 +201,26 @@ form button:hover {
   margin-bottom: 10px;
 }
 
-
-#agendamento {
-  max-width: 900px;
+#formaAgenda {
+  max-width: 640px;
   margin: 40px auto;
   padding: 0 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #2b2b2b;
 }
 
-#agendamento h2 {
+#formaAgenda h2 {
   font-size: 1.8rem;
   color: #2e8b74;
   margin-bottom: 8px;
 }
 
-#agendamento > p {
+#formaAgenda > p {
   margin-bottom: 24px;
   color: #555;
   line-height: 1.5;
 }
 
-#agendamento form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px 20px;
-  background: #ffffff;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
 
-#agendamento label {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #333;
-}
+ 
 
-
-#agendamento input,
-#agendamento select,
-#agendamento textarea {
-  width: 100%;
-  padding: 11px 12px;
-  font-size: 1rem;
-  font-family: inherit;
-  color: #222;
-  background: #fafafa;
-  border: 1px solid #ccd5d2;
-  border-radius: 8px;
-  box-sizing: border-box;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-#agendamento input::placeholder,
-#agendamento textarea::placeholder {
-  color: #9aa5a2;
-  font-family: inherit;
-}
-
-#agendamento input:focus,
-#agendamento select:focus,
-#agendamento textarea:focus {
-  outline: none;
-  border-color: #2e8b74;
-  box-shadow: 0 0 0 3px rgba(46, 139, 116, 0.2);
-  background: #fff;
-}
-
-#agendamento textarea {
-  min-height: 110px;
-  resize: vertical;
-}
-
-
-#agendamento label:has(textarea) {
-  grid-column: 1 / -1;
-}
-
-#agendamento button,
-#agendamento input[type="submit"] {
-  grid-column: 1 / -1;
-  justify-self: start;
-  width: auto;
-  padding: 13px 32px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #fff;
-  background: #2e8b74;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-}
-
-#agendamento button:hover,
-#agendamento input[type="submit"]:hover {
-  background: #247059;
-}
-
-#agendamento button:active,
-#agendamento input[type="submit"]:active {
-  transform: scale(0.98);
-}
-
-
-@media (max-width: 640px) {
-  #agendamento form {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
-  #agendamento button,
-  #agendamento input[type="submit"] {
-    width: 100%;
-    justify-self: stretch;
-  }
-}
