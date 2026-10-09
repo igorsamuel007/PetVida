@@ -144,5 +144,50 @@
             <p>&copy; 2026 PetVida - Clinica veterinaria e Estética Pet</p>
         </footer>
         
+             <script>
+    const form = document.getElementById('formAgenda');
+    const msg = document.getElementById('mensagem');
+    const campoData = document.getElementById('data');
+    
+    campoData.min = new Date().toISOString().split('T')[0];
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [];
+      const data = campoData.value;
+      const hora = document.getElementById('hora').value;
+
+
+const ocupado = agendamentos.some(a => a.data === data && a.hora === hora);
+      if (ocupado) {
+        msg.className = 'mensagem erro';
+        msg.textContent = 'Esse horário já está ocupado. Escolha outro.';
+        return;
+      }
+
+      agendamentos.push({
+        tutor: document.getElementById('tutor').value,
+        telefone: document.getElementById('telefone').value,
+        email: document.getElementById('email').value,
+        pet: document.getElementById('pet').value,
+        especie: document.getElementById('especie').value,
+        servico: document.getElementById('servico').value,
+        data: data,
+        hora: hora,
+        obs: document.getElementById('obs').value
+      });
+
+      localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
+
+      msg.className = 'mensagem sucesso';
+      msg.textContent = 'Agendamento confirmado para ' +
+        data.split('-').reverse().join('/') + ' às ' + hora + '!';
+      form.reset();
+    });
+  </script>
+        
+        
+        
 </body>
 </html>
