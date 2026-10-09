@@ -246,3 +246,40 @@ form button:hover {
 #formaAgenda form > label:first-child {
   margin-top: 0;
 }
+
+
+#formaAgenda input,
+#formaAgenda select,
+#formaAgenda textarea {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #222;
+  background: #fafafa;
+  border: 1px solid #ccd5d2;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#formaAgenda input::placeholder,
+#formaAgenda textarea::placeholder {
+  color: #9aa5a2;
+  font-family: inherit;
+}
+
+#formaAgenda input:focus,
+#formaAgenda select:focus,
+#formaAgenda textarea:focus {
+  outline: none;
+  border-color: #2e8b74;
+  box-shadow: 0 0 0 3px rgba(46, 139, 116, 0.2);
+  background: #fff;
+}
+
+#formaAgenda textarea {
+  min-height: 110px;
+  resize: vertical;
+}
